@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'client/show'
+
   root 'posts#new'
   resources :comments
   resources :posts
