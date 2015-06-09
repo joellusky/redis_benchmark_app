@@ -2,7 +2,7 @@ require 'redis'
 require 'uri'
 require "active_support/core_ext/string/conversions"
 
-url = URI.parse "http://127.0.0.1:6379"
+url = URI.parse ENV["REDIS_CLOUD"]
 redis = Redis.new host: url.host, port: url.port, password: url.password
 puts "Redis subscriber running"
 

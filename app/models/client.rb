@@ -1,4 +1,4 @@
-class Client < ActiveRecord::Base
+class Client 
 
 	BASE_URL = "http://ancient-bastion-4312.herokuapp.com/events.json/"
 
@@ -7,4 +7,5 @@ class Client < ActiveRecord::Base
 		  http.headers['Content-Type'] = 'application/json'
 		end
 	end
+
 end
